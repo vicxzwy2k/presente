@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Cor de fundo azul clara */
+    color: #00796b; /* Cor de texto em azul escuro */
+    overflow-y: scroll; /* Permite rolar para baixo */
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+}
+
+.countdown h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #01579b; /* Azul escuro */
+}
+
+#timer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0277bd; /* Azul mais forte */
+}
+
+.message {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #004d40; /* Azul esverdeado */
+    line-height: 1.6;
+    font-style: italic;
+    padding: 20px;
+    background-color: #b3e5fc; /* Azul claro */
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container para as imagens estáticas */
+.images-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que as imagens se ajustem quando necessário */
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.image-item {
+    width: 300px; /* Largura das imagens ajustada */
+    height: 200px; /* Altura ajustada */
+    object-fit: cover; /* Faz as imagens ocuparem o espaço sem deformação */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heart-container {
+    margin-top: 30px;
+}
+
+.heart-button {
+    font-size: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    color: #01579b; /* Cor azul para o coração */
+    display: inline-block;
+}
+
+.heart-button:active {
+    transform: scale(1.1);
+}
+
+.percentage {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #0288d1; /* Azul claro */
+}
+
+.music-container {
+    margin-top: 30px;
+}
+
+.play-pause-btn {
+    font-size: 40px;
+    background: #2a79c8; /* Tom de azul suave */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.play-pause-btn:active {
+    transform: scale(1.1);
+}
+
+.play-pause-btn:hover {
+    
+    background-color: #3571c0; /* Azul mais escuro ao passar o mouse */
+}
+
+.hearts span {
+    position: absolute;
+    font-size: 30px;
+    animation: falling 5s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes falling {
+    0% {
+        top: -10%;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
